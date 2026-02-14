@@ -1,11 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  background-color: #050505;
-  color: #fafafa;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
-body {
-  margin: 0;
-  overflow-x: hidden;
+/* Enable 3D rendering */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.tunnel-layer {
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
 }

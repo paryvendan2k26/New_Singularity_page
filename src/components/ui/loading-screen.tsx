@@ -7,27 +7,21 @@ interface LoadingScreenProps {
 }
 
 export function LoadingScreen({ onEnter }: LoadingScreenProps) {
-  const [visible, setVisible] = useState(false)
-  
   useEffect(() => {
-    const timer = setTimeout(() => setVisible(true), 2000)
-    return () => clearTimeout(timer)
-  }, [])
-  
+    // Instead of waiting for a click, we wait 4 seconds and then auto-enter
+    const autoTimer = setTimeout(() => {
+      onEnter();
+    }, 4500); // Adjust time to match when your spiral looks best
+    
+    return () => clearTimeout(autoTimer);
+  }, [onEnter]);
+
   return (
-    <div className="fixed inset-0 w-full h-full overflow-hidden bg-black z-[9999] flex items-center justify-center">
-      <div className="absolute inset-0">
-        <SpiralAnimation />
-      </div>
-      
-      <div className={`relative z-10 transition-all duration-1000 ${visible ? 'opacity-100' : 'opacity-0'}`}>
-        <button 
-          onClick={onEnter}
-          className="text-white text-2xl tracking-[0.3em] uppercase font-light hover:scale-110 transition-transform animate-pulse border border-white/20 px-8 py-3 backdrop-blur-sm"
-        >
-          Enter The Singularity
-        </button>
+    <div className="fixed inset-0 w-full h-full bg-black z-[9999] flex items-center justify-center">
+      <SpiralAnimation />
+      <div className="absolute bottom-10 animate-pulse text-xs font-mono tracking-widest text-gray-500 uppercase">
+        Initializing Singularity Protocol...
       </div>
     </div>
-  )
+  );
 }
