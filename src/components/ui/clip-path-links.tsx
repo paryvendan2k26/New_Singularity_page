@@ -15,22 +15,19 @@ import { useAnimate } from "framer-motion";
 export const ClipPathLinks = () => {
   return (
     <div className="divide-y border divide-white/10 border-white/10 bg-black/20 backdrop-blur-sm">
+      {/* <div className="grid grid-cols-1 divide-x divide-white/10">
+        <LinkBox Icon={SiGoogle} href="mailto:singularitylab@srmap.edu.in" />
+        <LinkBox Icon={Github} href="https://github.com/" />
+      </div> */}
       <div className="grid grid-cols-2 divide-x divide-white/10">
-        <LinkBox Icon={SiGoogle} href="mailto:kamalkamalesh316@gmail.com" />
-        <LinkBox Icon={Github} href="https://github.com/kamaleshsa" />
-      </div>
-      <div className="grid grid-cols-4 divide-x divide-white/10">
-        <LinkBox Icon={Twitter} href="https://x.com/Kamales71036733" />
-        <LinkBox Icon={Linkedin} href="https://www.linkedin.com/in/kamaleshsa" />
-        <LinkBox Icon={Instagram} href="https://www.instagram.com/k.a.m.a_l" />
-        <LinkBox Icon={Facebook} href="https://www.facebook.com/share/16Zgo4MK6M/" />
+        {/* <LinkBox Icon={Twitter} href="https://x.com/" /> */}
+        <LinkBox Icon={Linkedin} href="https://www.linkedin.com/in/the-singularity-advanced-research-lab-srmap" />
+        <LinkBox Icon={Instagram} href="https://www.instagram.com/thesingularity.srmap" />
+        {/* <LinkBox Icon={Facebook} href="https://www.facebook.com/" /> */}
       </div>
       <div className="grid grid-cols-3 divide-x divide-white/10">
         <LinkBox Icon={FaDiscord} href="https://discord.com/users/1367756111725334599" />
-        <LinkBox
-          href="https://21st.dev/kamaleshsa"
-          imgSrc="https://media.licdn.com/dms/image/v2/D4E0BAQH3Jqtih4t7-A/company-logo_200_200/B4EZY_fSK1HUAM-/0/1744821888382/21st_dev_logo"
-        />
+        <LinkBox Icon={SiGoogle} href="mailto:singularitylab@srmap.edu.in" />
         <LinkBox
           href="https://kamaleshsaportfolio.netlify.app/"
           imgSrc="https://i.ibb.co/q36kg6qT/fotor-2025052503615.png"
