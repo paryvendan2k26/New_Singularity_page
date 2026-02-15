@@ -30,7 +30,7 @@ export const ClipPathLinks = () => {
         <LinkBox Icon={SiGoogle} href="mailto:singularitylab@srmap.edu.in" />
         <LinkBox
           href="https://kamaleshsaportfolio.netlify.app/"
-          imgSrc="https://i.ibb.co/q36kg6qT/fotor-2025052503615.png"
+          imgSrc="https://res.cloudinary.com/djtemmctt/image/upload/v1771104005/singularity_new_logo_knedxr.png"
         />
       </div>
     </div>
