@@ -45,7 +45,7 @@ export const labs = [
     focus: "Robotics & IoT", 
     color: "#F97316",
     image_id: "lab_chitra_darshan_v123",
-    video_id: "" 
+    video_id: "v1771114402/robo_e9htbm" 
   },
   { 
     id: "navya-vigyan", 
